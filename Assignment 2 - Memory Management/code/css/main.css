@@ -1,0 +1,26 @@
+.algorithm-detail
+{
+  width: 102.5%;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid;
+  float: left;
+}
+
+.algorithm-result 
+{
+  width: 103%;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid;
+  float: right;
+}
+
+.algorithm-information 
+{
+  width: 100%;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid;
+  margin：auto;
+}

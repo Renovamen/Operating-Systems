@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <title>内存管理</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+  
+  <div class="container">
+
+    <br>
+    <div class="text-center">
+      <h1>操作系统项目二</h1>
+      <h4>内存管理/请求调页模拟</h4>
+      <h6 class="text-muted">1652746 邹笑寒</h5>
+    </div>
+
+
+    <div id="main">
+      <br>
+      <div class="algorithm">
+        <h4>算法选择</h4>
+       
+        <div class="custom-control custom-radio">
+          <input type="radio" id="FIFORatio" name="customRadio" class="custom-control-input" value="FIFO" checked>
+          <label class="custom-control-label" for="FIFORatio">FIFO</label>
+        </div>
+     
+        <div class="custom-control custom-radio">
+          <input type="radio" id="LRURatio" name="customRadio" class="custom-control-input" value="LRU">
+          <label class="custom-control-label" for="LRURatio">LRU</label>
+        </div>
+ 
+
+      </div>
+
+      
+          
+      <br>
+
+      <!-- /.algorithm-input -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="algorithm-detail">
+            <br>
+            <h4>参数信息</h4>
+            <br>
+
+            <p>内存块数: <span id="numberOfTotalMemoryBlocks" style="color: red;"><b>4</b></span></p>
+            <p>总指令数: <span id="numberOfTotalInstructions" style="color: red;"><b>320</b></span></p>
+            <p>每页存放指令数: <span id="numberOfInstructionsInEachPage" style="color: red;"><b>10</b></span></p>
+            <br>
+
+          </div>
+        </div>
+        <!-- /algorithm-detail -->
+
+        <div class="col-md-6">
+          <div class="algorithm-result">
+            <br>
+            <h4>模拟结果</h4>
+            <br>
+
+            <p>当前指令: <span id="currentInstruction" style="color: red;"><b>-1</b></span></p>
+            <p>缺页次数: <span id="numberOfMissingPages" style="color: red;"><b>-1</b></span></p>
+            <p>缺页率: <span id="pageFaultRate" style="color: red;"><b>NULL</b></span></p>
+            <br>
+
+          </div>
+        </div>
+      </div>
+      
+      <br>
+      <center>
+        <button id="startBtn" type="button" class="btn btn-primary">开始模拟</button>
+      </center>
+      <br>  
+      
+      
+      <div class="algorithm-information">
+
+        <br>
+
+        <button type="button" class="btn btn-info" disabled>
+          <span id="simulationInformation">模拟运行信息</span>
+        </button>
+
+        <br><br>
+
+        <div class="col-md-12">
+          <div style="height:500px; overflow-y:scroll; overflow-x:none;">
+            <table class="table table-hover" id="memoryTable" height="300px">
+              <thead>
+                <tr>
+                  <th scope="col">指令</th>
+                  <th scope="col">内存块1</th>
+                  <th scope="col">内存块2</th>
+                  <th scope="col">内存块3</th>
+                  <th scope="col">内存块4</th>
+                  <th scope="col">说明</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+          </div>
+
+          <br>
+       
+
+        </div>
+      </div>
+
+      <br>
+    
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
