@@ -2,7 +2,7 @@
 
 内存管理 / 请求调页模拟。
 
-预览：https://renovamen.github.io/Operating-System
+预览：https://renovamen.github.io/Operating-Systems
 
 
 
